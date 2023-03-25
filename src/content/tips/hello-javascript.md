@@ -1,9 +1,10 @@
 ---
-title: 'Hello World'
-pubDate: 2024-05-07
+title: 'Hello JavaScript'
+pubDate: 2024-05-08
 description: 'Hello this is my first recommendation'
-image:
+image: 'https://cdn.lorem.space/images/fashion/.cache/640x480/atikh-bana-_KaMTEmJnxY-unsplash.jpg'
 tags: ['astro', 'javascript']
+layout: '../../layouts/Posts.astro'
 ---
 
 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic atque tenetur quis eius quos ea neque sunt, accusantium soluta minus veniam tempora deserunt? Molestiae eius quidem quam repellat.

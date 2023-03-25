@@ -1,11 +1,14 @@
 ---
+import Tags from './Tags.astro'
+
 export interface Props {
 	title: string
 	time: string
 	tags: string[]
+	slug: string
 }
 
-const { title, time, tags } = Astro.props
+const { title, time, tags, slug } = Astro.props
 ---
 
 <article
@@ -16,20 +19,14 @@ const { title, time, tags } = Astro.props
 			{time}
 		</time>
 
-		<a href="#">
+		<a href={`/posts/${slug}`}>
 			<h3 class="mt-0.5 text-lg font-medium text-gray-900">
 				{title}
 			</h3>
 		</a>
 
 		<div class="mt-4 flex flex-wrap gap-1">
-			{
-				tags.map((tag) => (
-					<span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
-						{tag}
-					</span>
-				))
-			}
+			<Tags tags={tags} />
 		</div>
 	</div>
 </article>
